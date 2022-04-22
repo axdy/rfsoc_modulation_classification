@@ -20,13 +20,19 @@ class AMCCNN():
             self.accuracy_iter(y_pred, y_true)
         
         return self.print_accuracy()            
-        
+            
         
     def predict(self, sample):
         self._input[:] = sample
         self.cnn.write(0x100, 1)
         self.dma_transfer()
-        return self.classify(self._output)
+        return self.classify(self.format_output())
+
+    def predict_softmax(self, sample):
+        self._input[:] = sample
+        self.cnn.write(0x100, 1)
+        self.dma_transfer()
+        return self.format_output()
         
         
     def dma_transfer(self):
@@ -34,15 +40,15 @@ class AMCCNN():
         self.dma.recvchannel.transfer(self._output)
         self.dma.sendchannel.wait()
         self.dma.recvchannel.wait()
-
+        
     def format_output(self):
         output_bytes = self._output.tobytes()
         return np.frombuffer(output_bytes, dtype='float32')
     
     def softmax(self, x):
-        y = np.exp(x - np.max(x))
-        f_x = y / np.sum(np.exp(x))
-        return f_x
+        """Compute softmax values for each sets of scores in x."""
+        e_x = np.exp(x - np.max(x))
+        return e_x / e_x.sum()
         
     def classify(self, value):
         max_value = np.max(value)
