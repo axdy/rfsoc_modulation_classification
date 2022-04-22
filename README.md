@@ -8,4 +8,8 @@ This repository's files have been built and tested on PYNQ 2.6 running on the AM
 * Run `git clone git@github.com:Axdy/rfsoc_modulation_classification.git`
 * Copy the `amc_dma_rfsoc` folder from the `bitstream` folder to the `overlay` folder on your board.
 * Copy the contents of the `notebooks` folder into the `notebooks` on your board.
-* To run the voila webpage please run the command `voila /home/xilinx/jupyter_notebooks/voila_modulation_classification.ipynb --ExecutePreprocessor.timeout=180 --port=8866 --TagRemovePreprocessor.remove_cell_tags='{"ignore_me"}'`
+* To run the voila webpage please run the command 
+
+```
+voila /home/xilinx/jupyter_notebooks/voila_modulation_classification.ipynb --ExecutePreprocessor.timeout=180 --port=8866 --TagRemovePreprocessor.remove_cell_tags='{"ignore_me"}'
+```
