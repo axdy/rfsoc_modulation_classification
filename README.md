@@ -1,4 +1,4 @@
-# RFSoC Modulation Classification
+# Streaming-CNN FPGA Architecture for Communications-based Applications
 This repository stores the necessary files needed to run the voila notebook demo for modulation classifcation presented at FCCM 2022.
 
 ## Preinstallation
