@@ -1,0 +1,271 @@
+<html>
+<head>
+<title>IP Core Generation Report for axis_combine</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<style type="text/css">
+table {
+	width: 100%;
+	border: 1px solid black;
+}
+
+div {
+	line-heigh: 90%;
+}
+
+h2.title {
+	color: #000066;
+	font-weight: bold;
+}
+
+h3.sectionHeading {
+	color: #000066;
+	font-weight: bold;
+}
+
+td.distinctCellColor {
+	background-color: #eeeeff;
+}
+
+td.summaryTableSndColOddRow {
+	background-color: #eeeeff;
+	text-align: right;
+}
+
+td.summaryTableSndColEvenRow {
+	text-align: right;
+}
+
+thead.reportTableHeader {
+	background-color: #eeeeee;
+	font-weight: bold;
+}
+
+</style>
+
+</head>
+<body>
+<h2 class="title">IP Core Generation Report for axis_combine</h2>
+<div>
+<h3 class="sectionHeading">Summary</h3>
+<table>
+<tbody>
+<tr>
+<td class="distinctCellColor">IP core name
+</td>
+<td class="summaryTableSndColOddRow">BurstDataBuffer
+</td>
+</tr>
+<tr>
+<td>IP core version
+</td>
+<td class="summaryTableSndColEvenRow">1.0
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">IP core folder
+</td>
+<td class="summaryTableSndColOddRow"><a href="matlab:uiopen('hdl_prj/ipcore/BurstDataBuffer_v1_0/*.*')">hdl_prj/ipcore/BurstDataBuffer_v1_0</a>
+</td>
+</tr>
+<tr>
+<td>IP core zip file name
+</td>
+<td class="summaryTableSndColEvenRow">BurstDataBuffer_v1_0.zip
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">Target platform
+</td>
+<td class="summaryTableSndColOddRow">Generic Xilinx Platform
+</td>
+</tr>
+<tr>
+<td>Target tool
+</td>
+<td class="summaryTableSndColEvenRow">Xilinx Vivado
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">Target language
+</td>
+<td class="summaryTableSndColOddRow">VHDL
+</td>
+</tr>
+<tr>
+<td>Model
+</td>
+<td class="summaryTableSndColEvenRow"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('axis_combine')">axis_combine</a>
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">Model version
+</td>
+<td class="summaryTableSndColOddRow">1.286
+</td>
+</tr>
+<tr>
+<td>HDL Coder version
+</td>
+<td class="summaryTableSndColEvenRow">3.16
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">IP core generated on
+</td>
+<td class="summaryTableSndColOddRow">10-Jan-2023 15:52:59
+</td>
+</tr>
+<tr>
+<td>IP core generated for
+</td>
+<td class="summaryTableSndColEvenRow"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('axis_combine:264')">Burst Data</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<h3 class="sectionHeading">Target Interface Configuration</h3>
+Target platform interface table:
+<br/>
+<table>
+<thead class="reportTableHeader">
+<tr>
+<td>Port Name
+</td>
+<td>Port Type
+</td>
+<td>Data Type
+</td>
+<td>Target Platform Interfaces
+</td>
+<td>Bit Range / Address / FPGA Pin
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('axis_combine:265')">dataIn</a>
+</td>
+<td>Inport
+</td>
+<td>uint16
+</td>
+<td>AXI4-Stream Slave
+</td>
+<td>Data
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('axis_combine:267')">validIn</a>
+</td>
+<td class="distinctCellColor">Inport
+</td>
+<td class="distinctCellColor">boolean
+</td>
+<td class="distinctCellColor">AXI4-Stream Slave
+</td>
+<td class="distinctCellColor">Valid
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('axis_combine:292')">tlastIn</a>
+</td>
+<td>Inport
+</td>
+<td>boolean
+</td>
+<td>AXI4-Stream Slave
+</td>
+<td>TLAST (optional)
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('axis_combine:266')">dataOut</a>
+</td>
+<td class="distinctCellColor">Outport
+</td>
+<td class="distinctCellColor">uint16
+</td>
+<td class="distinctCellColor">AXI4-Stream Master
+</td>
+<td class="distinctCellColor">Data
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('axis_combine:268')">validOut</a>
+</td>
+<td>Outport
+</td>
+<td>boolean
+</td>
+<td>AXI4-Stream Master
+</td>
+<td>Valid
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('axis_combine:296')">tlastOut</a>
+</td>
+<td class="distinctCellColor">Outport
+</td>
+<td class="distinctCellColor">boolean
+</td>
+<td class="distinctCellColor">AXI4-Stream Master
+</td>
+<td class="distinctCellColor">TLAST (optional)
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<h3 class="sectionHeading">IP Core File List</h3>
+The IP core folder is located at:
+<br/>
+<a href="matlab:uiopen('hdl_prj/ipcore/BurstDataBuffer_v1_0/*.*')">hdl_prj/ipcore/BurstDataBuffer_v1_0</a>
+<br/>
+Following files are generated under this folder:
+<br/><br/>
+<b>IP core zip file</b>
+<br/>
+<a href="matlab:uiopen('hdl_prj/ipcore/BurstDataBuffer_v1_0/*.*')">BurstDataBuffer_v1_0.zip</a>
+<br/><br/>
+<b>IP core report</b>
+<br/>
+<a href="matlab:web('hdl_prj/ipcore/BurstDataBuffer_v1_0/doc/axis_combine_ip_core_report.html')">doc/axis_combine_ip_core_report.html</a>
+<br/><br/>
+<b>IP core HDL source files</b>
+<br/>
+<a href="matlab:edit('hdl_prj/ipcore/BurstDataBuffer_v1_0/hdl/vhdl/BurstDataBuffer_src_Buffer_Controller.vhd')">hdl/vhdl/BurstDataBuffer_src_Buffer_Controller.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj/ipcore/BurstDataBuffer_v1_0/hdl/vhdl/BurstDataBuffer_src_SinglePortRAM_generic.vhd')">hdl/vhdl/BurstDataBuffer_src_SinglePortRAM_generic.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj/ipcore/BurstDataBuffer_v1_0/hdl/vhdl/BurstDataBuffer_src_Burst_Data.vhd')">hdl/vhdl/BurstDataBuffer_src_Burst_Data.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj/ipcore/BurstDataBuffer_v1_0/hdl/vhdl/BurstDataBuffer_reset_sync.vhd')">hdl/vhdl/BurstDataBuffer_reset_sync.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj/ipcore/BurstDataBuffer_v1_0/hdl/vhdl/BurstDataBuffer_dut.vhd')">hdl/vhdl/BurstDataBuffer_dut.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj/ipcore/BurstDataBuffer_v1_0/hdl/vhdl/BurstDataBuffer_SimpleDualPortRAM_generic.vhd')">hdl/vhdl/BurstDataBuffer_SimpleDualPortRAM_generic.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj/ipcore/BurstDataBuffer_v1_0/hdl/vhdl/BurstDataBuffer_fifo_data_OUT.vhd')">hdl/vhdl/BurstDataBuffer_fifo_data_OUT.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj/ipcore/BurstDataBuffer_v1_0/hdl/vhdl/BurstDataBuffer_SimpleDualPortRAM_singlebit.vhd')">hdl/vhdl/BurstDataBuffer_SimpleDualPortRAM_singlebit.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj/ipcore/BurstDataBuffer_v1_0/hdl/vhdl/BurstDataBuffer_fifo_TLAST_OUT.vhd')">hdl/vhdl/BurstDataBuffer_fifo_TLAST_OUT.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj/ipcore/BurstDataBuffer_v1_0/hdl/vhdl/BurstDataBuffer_axi4_stream_master.vhd')">hdl/vhdl/BurstDataBuffer_axi4_stream_master.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj/ipcore/BurstDataBuffer_v1_0/hdl/vhdl/BurstDataBuffer_fifo_data.vhd')">hdl/vhdl/BurstDataBuffer_fifo_data.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj/ipcore/BurstDataBuffer_v1_0/hdl/vhdl/BurstDataBuffer_fifo_TLAST.vhd')">hdl/vhdl/BurstDataBuffer_fifo_TLAST.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj/ipcore/BurstDataBuffer_v1_0/hdl/vhdl/BurstDataBuffer_axi4_stream_slave.vhd')">hdl/vhdl/BurstDataBuffer_axi4_stream_slave.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj/ipcore/BurstDataBuffer_v1_0/hdl/vhdl/BurstDataBuffer.vhd')">hdl/vhdl/BurstDataBuffer.vhd</a>
+<br/>
+<br/>
+</div>
+</body>
+</html>
