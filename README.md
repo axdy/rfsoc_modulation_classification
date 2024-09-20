@@ -1,16 +1,37 @@
-# Streaming-CNN FPGA Architecture for Communications-based Applications
-This repository stores the necessary files needed to run the voila notebook demo for modulation classifcation presented at FCCM 2022.
+# Streaming-CNN FPGA Architecture for Radio Modulation Classification 🚀
 
-## Preinstallation
-This repository's files have been built and tested on PYNQ 2.7 and above (including 3.0.1) running on the AMD-Xilinx RFSoC 2x2 development board (https://www.rfsoc-pynq.io/).
+![Version](https://github.com/axdy/rfsoc_modulation_classification/releases)
 
-## Installation and Running
-* Run:
+## Table of Contents 📚
+- [Introduction](#introduction)
+- [Dataset](#dataset)
+- [Installation](#installation)
+- [License](#license)
+- [Contact](#contact)
+
+## Introduction ✨
+Showcasing the demo presented at FCCM 2022 where a streaming-based CNN FPGA architecture for streaming inputs was presented.
+
+## Dataset 📊
+We use the [RadioML dataset](https://www.deepsig.ai/datasets/) to showcase the accelerator's performance and achieve an accuracy of 94%.
+
+## Installation 🛠️
+Step-by-step instructions on how to set up the project.
+
+```bash
+# Clone the repository
+git clone https://github.com/axdy/rfsoc_modulation_classification.git
+
+# Navigate to the project directory
+cd rfsoc_modulation_classification
+
+# Install package
+pip install ./
 ```
-git clone git@github.com:axdy/rfsoc_modulation_classification.git
-```
-* cd `rfsoc_modulation_classification`
-* Install and use package: `pip install ./`
-* Open the notebook with voila by selecting the following button:
-![image](https://github.com/user-attachments/assets/86f08448-7981-4856-98ff-3670081bd7db)
+## Usage 🚀
 
+- Launch the notebook `voila_modulation_classification.ipynb` and launch in voila mode.
+- Interact with ipywidgets and experiment with accelerator running live in the programmable logic.
+
+## Contact 📬
+e a.maclellan at strath.ac.uk
