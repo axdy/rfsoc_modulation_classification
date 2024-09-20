@@ -9,7 +9,7 @@ This repository's files have been built and tested on PYNQ 2.7 and above (includ
 ```
 git clone git@github.com:axdy/rfsoc_modulation_classification.git
 ```
-* cd `rfsoc_modulation_classification
+* cd `rfsoc_modulation_classification`
 * Install and use package: `pip install ./`
 * Open the notebook with voila by selecting the following button:
 ![image](https://github.com/user-attachments/assets/86f08448-7981-4856-98ff-3670081bd7db)
