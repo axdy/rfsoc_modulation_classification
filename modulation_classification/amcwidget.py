@@ -6,7 +6,7 @@ import plotly.graph_objs as go
 import plotly.subplots as sp
 import numpy as np
 from IPython.display import display
-from notebooks.amccnn import AMCCNN
+from modulation_classification.amccnn import AMCCNN
 
 class AMCWidget():
     def __init__(self, data_dict, amc, dma):
